@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Welcome to Django{% endblock %}
+{% block head %}Welcome to Wikipedia{% endblock %}
+{% block content %}
+	<p>Welcome {{ user.username }} !!!</p>
+	<a href="/logout/">Logout</a>
+	
+
+<br/><br/>
+      <a href="/article/">View Articles</a>
+<br/><br/>
+      <a href="/edit/">Edit Articles</a>
+{% endblock %}
+
+
+<!--
+{% if article_list %}
+    <ul>
+    {% for article in article_list %}
+        <li>{{ article.article_title }} <br/> {{ article.article_text }} <br/><br/></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No articles are available.</p>
+{% endif %}
+
+-->
+
+
+
+

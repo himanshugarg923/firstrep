@@ -1,0 +1,11 @@
+<h2>Articles</h2>
+{% if article_list %}
+    <ul>
+    {% for article in article_list %}
+        <li><b>{{ article.article_title }}</b> <br/><font size="3">by {{ article.author_name }}</font><br/><br/> {{ article.article_text }} <br/><br/><br/></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No articles are available.</p>
+{% endif %}
+
